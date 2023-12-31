@@ -1,0 +1,195 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+  }
+  
+  header {
+    color: black;
+    text-align: center;
+    cursor: pointer;
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 15%;
+  }
+/*----------------Klockan och datum------------------*/
+  #clock {
+    background-color: lightgray;
+    border-radius: 50px;
+    font-size: 14px;
+    text-align: center;
+    padding: 5px;
+    margin: 20px auto;
+    width: 200px;
+  }
+/*----------------Snabbalänkar, Dagensväder, Nyheter & anteckningar------------------*/
+  section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+  
+  #links, #weather, #extra, #notes {
+    background-color: lightgrey;
+    text-align: center;
+    font-size: small;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 10px;
+    margin-top: 100px;
+    width: calc(25% - 20px);
+    box-sizing: border-box;
+  }
+
+
+/*----------------Snabbalänkar sektion------------------*/
+  button {
+    background-color: darkgray;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #links {
+    text-align: center;
+  }
+  
+  #links a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+  
+  .link-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .link-item {
+    position: relative;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 15px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .link-item img {
+    margin-right: 10px;
+  }
+  
+  .remove-link {
+    position: absolute;
+    border: 1px;
+    border-color: black;
+    top: 2px;
+    right: 5px;
+    font-size: 15px;
+    cursor: pointer;
+  }
+  
+  #addLinkBtn {
+    background-color: darkgrey;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: auto;
+    margin-bottom: 20px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+/*----------------Väder sektion------------------*/
+  .weather-box {
+    position: relative;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 15px auto;
+    padding: 30px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+  }
+  
+  #changeLocationBtn {
+    background-color: darkgrey;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+
+/*----------------Nyheter sektion------------------*/
+  #news {
+    margin-top: 10px; 
+    max-height: 300px; 
+    overflow-y: auto; 
+}
+
+.news-item {
+    margin-bottom: 10px; 
+    padding: 10px; 
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    background-color: #f9f9f9; 
+}
+
+.news-item h4 {
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.news-item p {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.news-item a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/*----------------Anteckningar sektion------------------*/
+  textarea {
+    width: 100%;
+    height: 150px;
+    resize: none;
+  }
+  
+/*----------------Random bild knappen------------------*/
+  #randomImageBtnContainer {
+    text-align: center;
+    margin-top: auto;
+  }
+  
+  #randomImageBtn {
+    background-color: darkgray;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 200px;
+    margin-right: 10px;
+  }
+  
+  #refreshSymbol {
+    font-size: 20px;
+    cursor: pointer;
+  }

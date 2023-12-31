@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Dashboard</title>
+</head>
+<body>
+<!--Datum & klocka-->
+<div id="clock">
+  <h2 id="dateTime"></h2>
+</div>
+
+<header id="dashboardTitle">Toleen Rifai Dashboard</header>
+
+<section>
+    <!--SnabbaLänkar-->
+  <div id="links">
+    <h2>Snabblänkar</h2>
+    <div class="link-container">
+      <div class="link-item" id="google">
+        <span class="remove-link" onclick="removeLink(this)">-</span>
+        <img src="https://www.google.com/s2/favicons?domain=www.google.com" alt="Google Favicon">
+        <a href="https://www.google.com" target="_blank">Google</a>
+      </div>
+
+      <div class="link-item" id="notion">
+        <span class="remove-link" onclick="removeLink(this)">-</span>
+        <img src="https://www.google.com/s2/favicons?domain=www.notion.so" alt="Notion Favicon">
+        <a href="https://www.notion.so" target="_blank">Notion</a>
+      </div>
+
+      <div class="link-item" id="slack">
+        <span class="remove-link" onclick="removeLink(this)">-</span>
+        <img src="https://www.google.com/s2/favicons?domain=www.slack.com" alt="Slack Favicon">
+        <a href="https://www.slack.com" target="_blank">Slack</a>
+      </div>
+
+      <div class="link-item" id="chatgpt">
+        <span class="remove-link" onclick="removeLink(this)">-</span>
+        <img src="https://www.google.com/s2/favicons?domain=www.chatgpt.com" alt="ChatGPT Favicon">
+        <a href="https://www.chatgpt.com" target="_blank">ChatGPT</a>
+      </div>
+    </div>
+
+    <button id="addLinkBtn">&plus; Lägg till länk</button>
+  </div>
+<!--DagensVäder-->
+  <div id="weather">
+    <h2>Dagens väder</h2>
+
+    <div class="weather-box" id="todayWeather">
+      <h3>Idag</h3>
+      <div class="temperature"></div>
+      <div class="weather-icon"></div>
+    </div>
+
+    <div class="weather-box" id="tomorrowWeather">
+      <h3>Imorgon</h3>
+      <div class="temperature"></div>
+      <div class="weather-icon"></div>
+    </div>
+
+    <button id="changeLocationBtn">Ändra plats</button>
+  </div>
+<!--Nyheter-->
+  <div id="extra">
+    <h2>Nyheter</h2>
+    <div id="news"></div>
+ </div>
+ 
+<!--Anteckningar-->
+  <div id="notes">
+    <h2>Anteckningar</h2>
+    <textarea id="notesTextarea" placeholder="Skriv dina anteckningar här..."></textarea>
+  </div>
+</section>
+
+<!--Randomisera ny bakgrund-->
+<div id="randomImageBtnContainer">
+  <button id="randomImageBtn">&#8635; Slumpa ny bakgrund</button>
+</div>
+<!--JavaScript filer-->
+<script src="script.js"></script>
+<script src="fetchWeather.js"></script>
+<script src="fetchNews.js"></script>
+</body>
+</html>
